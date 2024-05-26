@@ -229,7 +229,7 @@ button:focus-visible {
   right: 27px;
   bottom: 30px;
   box-shadow: none;
-  transition: box-shadow, all 0.3s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
   color: var(--accent-color);
 }
