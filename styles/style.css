@@ -302,6 +302,7 @@ dialog[open] {
   display: flex;
   gap: 20px;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 dialog[open] .close {
