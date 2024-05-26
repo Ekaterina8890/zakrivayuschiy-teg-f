@@ -364,7 +364,8 @@
         </button>
       </section>
       <footer>
-      <button class="save-button"
+      <button 
+        class="save-button"
         type="button"
         onclick="window['modal_window'].showModal()"
         aria-controls="modal_window">
@@ -377,19 +378,21 @@
       </button>
     </footer>
       <dialog id="modal_window" class="dialog">
-        <div class="dialog-window">
-          <svg viewBox="0 0 21 21" class="svg-floppy">
-            <use href="#icon-floppy"/>
-          </svg>
-          <h2>Вставьте дискету, чтобы продолжить</h2>
-        </div>
-        <button
-          class="close"
-          type="button"
-          onclick="window['modal_window'].close();"
-        >
-          OK
-        </button>
+        <form method="dialog">
+          <div class="dialog-window">
+            <svg viewBox="0 0 21 21" class="svg-floppy">
+              <use href="#icon-floppy"/>
+            </svg>
+            <h2>Вставьте дискету, чтобы продолжить</h2>
+          </div>
+          <button
+            class="close"
+            type="button"
+            onclick="window['modal_window'].close();"
+          >
+            OK
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
