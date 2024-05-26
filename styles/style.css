@@ -21,7 +21,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
-  font-variation-settings: wght 400;
+  font-variation-settings: wght 400, 785;
   background-image: linear-gradient(
     var(--background-color),
     var(--background-gradient)),
