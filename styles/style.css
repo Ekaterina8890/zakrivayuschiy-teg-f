@@ -205,6 +205,7 @@ button:focus-visible {
 @supports((text-stroke: 0.5px var(--section-background)) or (-webkit-text-stroke: 0.5px var(--section-background))) {
   .layble {
       -webkit-text-stroke: 0.5px var(--section-background);
+      text-stroke: 0.5px var(--section-background);
       text-shadow: none;
   }
 }
