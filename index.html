@@ -363,10 +363,11 @@
           </svg>
         </button>
       </section>
+      <footer>
       <button class="save-button"
         type="button"
-        onclick="window['dialog-id'].showModal();"
-        aria-controls="dialog-id">
+        onclick="window['modal_window'].showModal()"
+        aria-controls="modal_window">
           <svg viewBox="0 0 21 21" class="svg-floppy">
             <use href="#icon-floppy"/>
           </svg>
@@ -374,6 +375,7 @@
             Сохранить на память
           </span>
       </button>
+    </footer>
       <dialog id="dialog-id" class="dialog">
         <div class="dialog-window">
           <svg viewBox="0 0 21 21" class="svg-floppy">
