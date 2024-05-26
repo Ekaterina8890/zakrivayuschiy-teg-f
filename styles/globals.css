@@ -8,8 +8,12 @@
   box-sizing: border-box;
 }
 
+main,
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1,
@@ -35,6 +39,7 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  padding: 0;
 }
 
 ul,
@@ -50,4 +55,12 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 14px;
 }

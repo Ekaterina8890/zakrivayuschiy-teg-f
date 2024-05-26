@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+.page {
+    --font-main: 'Inter-Variable', sans-serif;
+    --font-accent: 'PressStart2P-Regular', sans-serif;
+    --main-text-color: #000;
+    --main-text-weight: 400;
+    --title-text-weight: 700;
+    --background-color: #e7e7e7;
+    --accent-color: #000;
+    --background-img: rgba(211, 211, 211, 1);
+    --background-gradient: #1a1a1a;
+    --section-background: #fff;
+    --section-width: clamp(375px, 51%, 699px);
+    --cursor: ▶;
+    --background-mix: #fff;
+    --heart-contour: #000;
+    --heart-color: #FF0000;
+    --backdrop-background: #000;
+}
