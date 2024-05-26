@@ -31,7 +31,7 @@
     --title-text-weight: 785;
     --background-color: #007F0C;
     --accent-color: #00CC14;
-    --background-img: rgba(0, 0, 0, 1);;
+    --background-img: rgba(0, 0, 0, 1);
     --background-gradient: #004306;
     --section-background: #000;
     --section-width: clamp(375px, 51%, 699px);
@@ -52,7 +52,7 @@
         --title-text-weight: 785;
         --background-color: #007F0C;
         --accent-color: #00CC14;
-        --background-img: rgba(0, 0, 0, 1);;
+        --background-img: rgba(0, 0, 0, 1);
         --background-gradient: #004306;
         --section-background: #000;
         --section-width: clamp(375px, 51%, 699px);
