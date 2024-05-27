@@ -1,5 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-.page {
+:root {
     --font-main: 'Inter-Variable', sans-serif;
     --font-accent: 'PressStart2P-Regular', fantasy;
     --main-text-color: #000;

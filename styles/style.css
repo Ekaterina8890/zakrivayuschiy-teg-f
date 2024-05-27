@@ -278,10 +278,6 @@ button:focus-visible {
   color: var(--accent-color);
 }
 
-.icon-floppy {
-  color: var(--accent-color);
-
-}
 
 dialog[open] {
   max-width: 357px;
