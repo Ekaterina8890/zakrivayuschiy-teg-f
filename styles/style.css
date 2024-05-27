@@ -14,6 +14,27 @@
 
 */
 
+html {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: "wght" var(--main-text-weight)) {
+  html {
+    font-family: 'Inter-Variable', sans-serif;
+    font-variation-settings: "wght" var(--main-text-weight);
+  }
+}
+
+.section-title {
+  font-weight: 900;
+}
+@supports (font-variation-settings: "wght" var(--title-text-weight))
+ {
+  .section-title  {
+    font-variation-settings: "wght" var(--title-text-weight);
+    font-weight: bold;
+  }
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -45,7 +66,7 @@ body {
   font-family: var(--font-accent);
 }
 
-@supports (font-variation-settings: "wght" 400 785) {
+@supports (font-variation-settings: normal) {
   body {
     font-family: var(--font-main);
  
