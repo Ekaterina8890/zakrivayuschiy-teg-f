@@ -48,6 +48,7 @@ body {
 @supports (font-variation-settings: normal) {
   body {
     font-family: var(--font-main);
+    font-weight: 400 785;
   }
 }
 
@@ -247,7 +248,7 @@ button:focus-visible {
 .card__icon-button {
   position: absolute;
   right: 160px;
-  bottom: 25px;
+  bottom: 28px;
   border: none;
 }
 
@@ -297,7 +298,7 @@ dialog[open] {
 .dialog-window .svg-floppy {
   min-width: 39px;
   min-height: 39px;
-  color: var( --accent-color);
+  color: var(--accent-color);
 }
 
 .dialog-window {
@@ -382,11 +383,6 @@ dialog::backdrop {
   .svg-floppy {
     width: 28px;
     height: 28px;
-    color: var(--accent-color);
-  }
-
-  .icon-floppy {
-    color: var(--accent-color);
   }
 
   .save-button::before {

@@ -65,3 +65,7 @@ h2 {
   font-size: 14px;
 }
 
+svg:focus{
+border: none;
+padding: 0;
+}
