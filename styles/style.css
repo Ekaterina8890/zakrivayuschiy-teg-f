@@ -14,27 +14,6 @@
 
 */
 
-html {
-  font-family: 'Inter', sans-serif;
-}
-@supports (font-variation-settings: "wght" var(--main-text-weight)) {
-  html {
-    font-family: 'Inter-Variable', sans-serif;
-    font-variation-settings: "wght" var(--main-text-weight);
-  }
-}
-
-.section-title {
-  font-weight: 900;
-}
-@supports (font-variation-settings: "wght" var(--title-text-weight))
- {
-  .section-title  {
-    font-variation-settings: "wght" var(--title-text-weight);
-    font-weight: bold;
-  }
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -61,17 +40,6 @@ html {
   background-blend-mode: overlay, saturation;
   background-size: cover;
   }
-
-body {
-  font-family: var(--font-accent);
-}
-
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: var(--font-main);
- 
-  }
-}
 
 .theme-light .page {
   background-image: linear-gradient(
@@ -211,7 +179,7 @@ button:focus-visible {
   color: var(--main-text-color);
   font-family: var(--font-accent);
   font-size: 14px;
-  font-weight: 'wdth' var(--main-text-weight);
+  font-weight: 400;
   position: absolute;
   right: 25px;
   top: 26px;
@@ -236,7 +204,7 @@ button:focus-visible {
   flex-direction: column;
   font-family: inherit;
   font-size: 18px;
-  font-weight: 'wdth' var(--main-text-weight);
+  font-variation-settings: 'wdth' var(--main-text-weight);
   color: var(--main-text-color);
   padding: 23px 23px 90px;
   line-height: 21px;
@@ -421,4 +389,7 @@ dialog::backdrop {
 
 }
 
-
+use.svg-floppy {
+  width: 28px;
+  height: 28px;
+}
