@@ -8,8 +8,8 @@
     --font-main: 'Inter-Variable', sans-serif;
     --font-accent: 'PressStart2P-Regular', sans-serif;
     --main-text-color: #000;
-    --main-text-weight: "wght" 400;
-    --title-text-weight: "wght" 700;
+    --main-text-weight: 400;
+    --title-text-weight: 700;
     --background-color: #e7e7e7;
     --accent-color: #000;
     --background-img: rgba(211, 211, 211, 1);
@@ -27,8 +27,8 @@
     --font-main: 'Inter-Variable', sans-serif;
     --font-accent: 'PressStart2P-Regular', sans-serif;
     --main-text-color: #00CC14;
-    --main-text-weight: "wght" 465;
-    --title-text-weight: "wght" 785;
+    --main-text-weight: 465;
+    --title-text-weight: 785;
     --background-color: #007F0C;
     --accent-color: #00CC14;
     --background-img: rgba(0, 0, 0, 1);
@@ -48,8 +48,8 @@
         --font-main: 'Inter-Variable', sans-serif;
         --font-accent: 'PressStart2P-Regular', sans-serif;
         --main-text-color: #00CC14;
-        --main-text-weight: "wght" 465;
-        --title-text-weight: "wght" 785;
+        --main-text-weight: 465;
+        --title-text-weight: 785;
         --background-color: #007F0C;
         --accent-color: #00CC14;
         --background-img: rgba(0, 0, 0, 1);

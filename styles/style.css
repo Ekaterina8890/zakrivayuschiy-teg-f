@@ -21,7 +21,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
-  font-variation-settings: var(--main-text-weight);
+  font-variation-settings: 'wdth' var(--main-text-weight);
   background-image: linear-gradient(
     var(--background-color),
     var(--background-gradient)),
@@ -168,7 +168,7 @@ button:focus-visible {
 
 .section-title {
   padding: 4px 9px;
-  font-variation-settings: var(--title-text-weight);
+  font-variation-settings: 'wdth' var(--title-text-weight);
 }
 
 .image-card {
@@ -190,7 +190,7 @@ button:focus-visible {
   color: var(--main-text-color);
   font-family: var(--font-accent);
   font-size: 14px;
-  font-weight: var(--main-text-weight);
+  font-weight: 'wdth' var(--main-text-weight);
   position: absolute;
   right: 25px;
   top: 26px;
@@ -215,7 +215,7 @@ button:focus-visible {
   flex-direction: column;
   font-family: inherit;
   font-size: 18px;
-  font-weight: var(--main-text-weight);
+  font-weight: 'wdth' var(--main-text-weight);
   color: var(--main-text-color);
   padding: 23px 23px 90px;
   line-height: 21px;
@@ -273,6 +273,12 @@ button:focus-visible {
 }
 
 .svg-floppy {
+  width: 21px;
+  height: 21px;
+  color: var(--accent-color);
+}
+
+.icon-floppy {
   width: 21px;
   height: 21px;
   color: var(--accent-color);
