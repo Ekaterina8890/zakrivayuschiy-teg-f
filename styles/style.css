@@ -45,7 +45,7 @@ body {
   font-family: var(--font-accent);
 }
 
-@supports (font-variation-settings: "wght" 400 785;) {
+@supports (font-variation-settings: "wght" 400 785) {
   body {
     font-family: var(--font-main);
  
@@ -279,8 +279,6 @@ button:focus-visible {
 }
 
 .icon-floppy {
-  width: 21px;
-  height: 21px;
   color: var(--accent-color);
 }
 
