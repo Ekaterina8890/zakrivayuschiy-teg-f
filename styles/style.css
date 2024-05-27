@@ -21,6 +21,7 @@ body {
 @supports (font-variation-settings: 'wdth' 400 785) {
   body {
       font-family: 'Inter-Variable', sans-serif;
+      font-variation-settings: 'wdth' 400 785;
   }
 } 
 
