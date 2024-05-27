@@ -21,7 +21,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
-  font-variation-settings: "wght" 400;
+  font-variation-settings: var(--font-weight);
   background-image: linear-gradient(
     var(--background-color),
     var(--background-gradient)),
@@ -157,7 +157,6 @@ button:focus-visible {
   width: var(--section-width);
   font-family: inherit;
   font-size: 18px;
-  font-weight: 400;
   color: var(--main-text-color);
   margin-bottom: 50px;
   background-color: var(--section-background);
@@ -168,6 +167,7 @@ button:focus-visible {
 
 .section-title {
   padding: 4px 9px;
+  font-variation-settings: var(--font-weight-bold);
 }
 
 .image-card {
@@ -296,6 +296,7 @@ dialog[open] {
 .dialog-window .svg-floppy {
   min-width: 39px;
   min-height: 39px;
+  color: var( --accent-color);
 }
 
 .dialog-window {
@@ -380,6 +381,10 @@ dialog::backdrop {
   .svg-floppy {
     width: 28px;
     height: 28px;
+    color: var(--accent-color);
+  }
+
+  .icon-floppy{
     color: var(--accent-color);
   }
 

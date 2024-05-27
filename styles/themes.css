@@ -21,6 +21,8 @@
     --heart-contour: #000;
     --heart-color: #FF0000;
     --backdrop-background: #000;
+    --font-weight: "wght" 400;
+    --font-weight-bold: "wght" 700;
 }
     
  .theme-dark .page {
@@ -40,6 +42,8 @@
     --heart-contour: #00CC14;
     --heart-color: #FF0000;
     --backdrop-background: #000;
+    --font-weight: "wght" 465;
+    --font-weight-bold: "wght" 785;
     }
 
 
