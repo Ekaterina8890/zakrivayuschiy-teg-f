@@ -264,11 +264,13 @@ button:focus-visible {
 .svg-floppy {
   width: 21px;
   height: 21px;
-  color: var(--accent-color);
+  color: black;
+  mix-blend-mode: difference;
 }
 
 .icon-floppy {
-  color: var(--accent-color);
+  color: black;
+  mix-blend-mode: difference;
 }
 
 dialog[open] {
@@ -291,7 +293,8 @@ dialog[open] {
 .dialog-window .svg-floppy {
   min-width: 39px;
   min-height: 39px;
-  color: var(--accent-color);
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .dialog-window {
