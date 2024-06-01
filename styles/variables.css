@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --font-main: 'Inter-Variable', sans-serif;
-    --font-accent: 'PressStart2P-Regular', fantasy;
+    --font-accent: 'PressStart2P', fantasy;
     --main-text-color: #000;
     --main-text-weight: 400;
     --title-text-weight: 700;
@@ -16,4 +16,39 @@
     --heart-contour: #000;
     --heart-color: #FF0000;
     --backdrop-background: #000;
+    --backgroun-gradient: rgba(211, 211, 211, 1);
+    --background-image: linear-gradient(
+        transparent 0.01%,
+        var(--background-color),
+        var(--background-gradient)),
+      repeating-linear-gradient(
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      ),
+      repeating-linear-gradient(90deg,
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      );
+
+      --background-image-light: linear-gradient(
+        transparent 0.01%,
+        var(--background-color),
+        var(--background-gradient)),
+      repeating-linear-gradient(
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      ),
+      repeating-linear-gradient(90deg,
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      );
+
 }

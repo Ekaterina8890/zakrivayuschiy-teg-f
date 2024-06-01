@@ -57,10 +57,10 @@ ol {
   white-space: nowrap;
 }
 
-h3 {
+h3, h2 {
   font-size: 18px;
 }
 
-h2 {
-  font-size: 14px;
+a {
+  cursor: pointer;
 }

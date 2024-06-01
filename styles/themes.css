@@ -6,7 +6,7 @@
 */
 :root.theme-light {
     --font-main: 'Inter-Variable', sans-serif;
-    --font-accent: 'PressStart2P-Regular', fantasy;
+    --font-accent: 'PressStart2P', fantasy;
     --main-text-color: #000;
     --main-text-weight: 400;
     --title-text-weight: 700;
@@ -21,11 +21,45 @@
     --heart-contour: #000;
     --heart-color: #FF0000;
     --backdrop-background: #000;
+    --background-image: linear-gradient(
+        transparent 0.01%,
+        var(--background-color),
+        var(--background-gradient)),
+      repeating-linear-gradient(
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      ),
+      repeating-linear-gradient(90deg,
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      );
+
+      --background-image-light: linear-gradient(
+        transparent 0.01%,
+        var(--background-color),
+        var(--background-gradient)),
+      repeating-linear-gradient(
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(0, 0, 0, 1) 2px,
+        rgba(0, 0, 0, 1) 4px
+      ),
+      repeating-linear-gradient(90deg,
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(255, 255, 255, 0) 2px,
+        rgba(255, 255, 255, 0) 4px
+      );
+
 }
     
 :root.theme-dark {
     --font-main: 'Inter-Variable', sans-serif;
-    --font-accent: 'PressStart2P-Regular', fantasy;
+    --font-accent: 'PressStart2P', fantasy;
     --main-text-color: #00CC14;
     --main-text-weight: 465;
     --title-text-weight: 785;
@@ -40,13 +74,28 @@
     --heart-contour: #00CC14;
     --heart-color: #FF0000;
     --backdrop-background: #000;
+    --background-image: linear-gradient(
+        var(--background-color),
+        var(--background-gradient)),
+      repeating-linear-gradient(
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      ),
+      repeating-linear-gradient(90deg,
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      );
     }
 
 
 @media (prefers-color-scheme: dark) {
     :root {
         --font-main: 'Inter-Variable', sans-serif;
-        --font-accent: 'PressStart2P-Regular', fantasy;
+        --font-accent: 'PressStart2P', fantasy;
         --main-text-color: #00CC14;
         --main-text-weight: 465;
         --title-text-weight: 785;
@@ -61,5 +110,39 @@
         --heart-contour: #00CC14;
         --heart-color: #FF0000;
         --backdrop-background: #000;
+        --background-image: linear-gradient(
+            var(--background-color),
+            var(--background-gradient)),
+        repeating-linear-gradient(
+            var(--background-img),
+            var(--background-img) 2px,
+            rgba(211, 211, 211, 0) 2px,
+            rgba(211, 211, 211, 0) 4px
+        ),
+        repeating-linear-gradient(90deg,
+            var(--background-img),
+            var(--background-img) 2px,
+            rgba(211, 211, 211, 0) 2px,
+            rgba(211, 211, 211, 0) 4px
+        );
+    }
+    
+    :root .theme-light {
+        --background-image: linear-gradient(
+        transparent 0.01%,
+        var(--background-color),
+        var(--background-gradient)),
+      repeating-linear-gradient(
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      ),
+      repeating-linear-gradient(90deg,
+        var(--background-img),
+        var(--background-img) 2px,
+        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 4px
+      );
     }
 }
