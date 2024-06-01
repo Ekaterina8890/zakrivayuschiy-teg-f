@@ -37,6 +37,7 @@ body {
   background-image: var(--background-image);
   background-blend-mode: overlay, saturation;
   background-size: cover;
+  background-attachment: fixed;
   }
 
 .header {
