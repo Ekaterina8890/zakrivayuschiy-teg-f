@@ -114,7 +114,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    :root{
+    :root {
         --font-main: 'Inter-Variable', sans-serif;
         --font-accent: 'PressStart2P', fantasy;
         --main-text-color: #000;

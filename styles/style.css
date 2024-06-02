@@ -100,7 +100,7 @@ button[disabled]::before {
   cursor: pointer;
 }
 
-.theme-menu__button:focus-visible{
+.theme-menu__button:focus-visible {
   opacity: 0.6;
 } 
 
