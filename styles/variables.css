@@ -7,8 +7,9 @@
     --title-text-weight: 700;
     --background-color: #e7e7e7;
     --accent-color: #000;
-    --background-img: rgba(211, 211, 211, 1);
-    --background-gradient: #1a1a1a;
+    --background-img: #d3d3d3;
+    --background-gradient: #000;
+    --bottom-gradient: #1a1a1a;
     --section-background: #fff;
     --section-width: clamp(375px, 51%, 699px);
     --cursor: ▶;
@@ -16,15 +17,14 @@
     --heart-contour: #000;
     --heart-color: #FF0000;
     --backdrop-background: #000;
-    --backgroun-gradient: rgba(211, 211, 211, 1);
     --background-image: linear-gradient(
-        transparent 0.01%,
         var(--background-color),
-        var(--background-gradient)),
+        transparent 0.01%,
+        var(--bottom-gradient)),
       repeating-linear-gradient(
         var(--background-img),
         var(--background-img) 2px,
-        rgba(211, 211, 211, 0) 2px,
+        rgba(211, 211, 211, 0) 2px,yrcty,uilo;
         rgba(211, 211, 211, 0) 4px
       ),
       repeating-linear-gradient(90deg,
@@ -33,22 +33,4 @@
         rgba(211, 211, 211, 0) 2px,
         rgba(211, 211, 211, 0) 4px
       );
-
-      --background-image-light: linear-gradient(
-        transparent 0.01%,
-        var(--background-color),
-        var(--background-gradient)),
-      repeating-linear-gradient(
-        var(--background-img),
-        var(--background-img) 2px,
-        rgba(211, 211, 211, 0) 2px,
-        rgba(211, 211, 211, 0) 4px
-      ),
-      repeating-linear-gradient(90deg,
-        var(--background-img),
-        var(--background-img) 2px,
-        rgba(211, 211, 211, 0) 2px,
-        rgba(211, 211, 211, 0) 4px
-      );
-
 }

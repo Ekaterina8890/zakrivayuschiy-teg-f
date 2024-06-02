@@ -14,6 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
 }
 
 h1,
@@ -42,6 +44,9 @@ input {
   font-family: inherit;
   font-size: inherit;
   padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul,
@@ -61,4 +66,13 @@ ol {
 
 h3, h2 {
   font-size: 18px;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+
+a:focus {
+  outline: none;
 }
