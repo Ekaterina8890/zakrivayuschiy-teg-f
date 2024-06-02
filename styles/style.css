@@ -134,7 +134,8 @@ button[disabled]::before {
 
 .image-style {
   inline-size: 100%;
-  height: clamp(371px, 80dvb, 699px);
+  min-width: clamp(371px, 50vw, 696px);
+  min-height: clamp(371px, 50vw, 696px);
   object-fit: cover;
   object-position: center center;
   outline: 2px solid var(--accent-color);
