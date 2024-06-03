@@ -69,16 +69,16 @@
 }
 
 .theme-menu__button:not(:disabled)::after {
-content: "";
-display: block;
-width: 100%;
-background-color: var(--accent-color);
-transition: transform 0.3s ease;
-transform: scaleX(0);
-transform-origin: left;
-block-size: 2px;
-position: absolute;
-bottom: 12px;
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: var(--accent-color);
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  block-size: 2px;
+  position: absolute;
+  bottom: 12px;
 }
 
 button[disabled] {
@@ -140,6 +140,7 @@ button[disabled]::before {
   object-position: center center;
   outline: 2px solid var(--accent-color);
   line-height: 0;
+  aspect-ratio: 1/1;
 }
 
 .layble {
@@ -156,6 +157,7 @@ button[disabled]::before {
   0 1px var(--section-background), 
   1px 0 var(--section-background), 
   0 -1px var(--section-background);
+  mix-blend-mode: hard-light;
 }
 
 @supports((text-stroke: 0.5px var(--section-background)) or (-webkit-text-stroke: 0.5px var(--section-background))) {
@@ -183,7 +185,6 @@ button[disabled]::before {
   width: 100%;
   padding: 0 26px 25px 0;
   justify-content: flex-end;
-  align-items: center;
   gap: 7px;
 }
 
@@ -212,9 +213,14 @@ button[disabled]::before {
 }
 
 .card__icon-button {
-  right: 160px;
-  bottom: 28px;
-  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+  block-size: 38px;
+  inline-size: 43px;
 }
 
 .like-icon {
@@ -265,7 +271,7 @@ dialog[open] {
   display: flex;
   gap: 20px;
   align-items: center;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 dialog[open] .close {
@@ -274,22 +280,15 @@ dialog[open] .close {
 }
 
 .close {
-  padding: 12.5px 0;
+  padding: 10.5px 0;
 }
 
 dialog::backdrop {
   background: rgba(0 0 0 / 0.75);
 }
 
-.card__icon-button:focus-visible::before {
-  content: "";
-  width: 33px;
-  height: 34px;
-  outline: 2px solid var(--main-text-color);
-  display: flex;
-  position: absolute;
-  right: 164px;
-  bottom: 27px;
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
 }
 
 .button-style:focus-visible {
@@ -298,7 +297,7 @@ dialog::backdrop {
 
 .button-style::before {
   content: "";
-  width: 0px;
+  width: 100%;
   height: 100%;
   display: flex;
   background-color: var(--accent-color);
@@ -311,7 +310,6 @@ dialog::backdrop {
 
 .button-style:hover::before {
   transform: translateX(0%);
-  width: 100%;
 }
 
 
@@ -363,10 +361,6 @@ dialog::backdrop {
     right: 12px;
   }
 
-  .image-style {
-    height: clamp(371px, 57dvb, 699px);
-  }
-
   .section-title {
     padding: 5px 9px;
   }
@@ -388,7 +382,6 @@ dialog::backdrop {
 
   dialog[open] {
     max-width: 341px;
-    height: 194px;
   }
 
 }
